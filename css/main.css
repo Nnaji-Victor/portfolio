@@ -4269,7 +4269,7 @@ button {
   .highlight-pink {
     background-image: linear-gradient(-60deg, transparent 55%, #ee9eff); }
   .highlight-last {
-    background-image: linear-gradient(120deg, transparent 45%, #ff4); }
+    background-image: linear-gradient(120deg, transparent 45%, #47ff87); }
   .delay--max-cta {
     margin-top: 20px; }
   a.button {
@@ -4280,8 +4280,10 @@ button {
     border: 1px solid #333333;
     border-radius: 5px; }
   .main_screen_content {
-    background: url(../img/bg/avatar.svg) no-repeat 80% 50% / contain; }
+    background: url(../img/bg/icons8-user-male.svg) no-repeat 80% 50% / contain; }
       @media (max-width: 950px) { .main_screen_content {
            background: rgb(255,255,255); } }
+
+
 
 
