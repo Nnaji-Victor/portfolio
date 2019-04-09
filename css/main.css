@@ -371,10 +371,10 @@ th {
   border-color: #252537; }
 
 .main_screen_accent_color--bg, .loader_small_line--1, .main_slider_sliding_dot, .main_slider_title_box {
-  background-color:greenyellow; }
+  background-color: blue; }
 
 .main_screen_accent_color--text, .loader_logo {
-  color: greenyellow; }
+  color: #f9e1d5; }
 
 .main_company_info_text {
   background-image: url(data:image/svg+xml;utf8,<svg height=110 width=20 xmlns=http://www.w3.org/2000/svg viewBox=0 0 20 110><path fill=);
@@ -388,25 +388,25 @@ th {
   0% {
     background-color: white; }
   100% {
-    background-color: #f9e1d5; } }
+    background-color: #fff; } }
 
 @-moz-keyframes color_loader_background {
   0% {
     background-color: white; }
   100% {
-    background-color: #f9e1d5; } }
+    background-color: #fff; } }
 
 @-o-keyframes color_loader_background {
   0% {
     background-color: white; }
   100% {
-    background-color: #f9e1d5; } }
+    background-color: #fff; } }
 
 @keyframes color_loader_background {
   0% {
     background-color: white; }
   100% {
-    background-color: #f9e1d5; } }
+    background-color: #fff; } }
 
 @-webkit-keyframes color_small_line-2 {
   0% {
@@ -508,7 +508,7 @@ th {
   color: white; }
 
 .about_screen_text_color, .overlay__info_text--about {
-  color: #f9e1d5; }
+  color:black; }
 
 .about_screen_accent_color {
   color: #f9e1d5; }
@@ -1957,7 +1957,7 @@ button {
     -ms-transform: scaleX(2);
     -o-transform: scaleX(2);
     transform: scaleX(2);
-    background-color: #f9e1d5; }
+    background-color: blue; }
   .nav__logo_letter--white {
     color: white; }
   .nav__logo_letter--no-line:before {
@@ -2508,7 +2508,29 @@ button {
     .main_screen {
       overflow: visible; }
       .case_opened .main_screen {
-        overflow: hidden; } }
+				overflow: hidden; } }
+				
+	.main_screen1 {
+		position: relative;
+		z-index: 10;
+}
+		.bottom_menu_active .main_screen,
+		.top_menu_active .main_screen {
+			overflow: hidden; }
+		@media (max-width: 950px) {
+			.main_screen {
+				overflow: visible; }
+				.case_opened .main_screen {
+					overflow: hidden; } }
+
+.about_text_main{
+	font-family: 'Playfair Display', Helvetica, Arial, sans-serif;
+	margin-top: 1.5em;
+	font-size: 24px;
+	color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
 
 .main_screen_content {
   height: 65%;
@@ -2846,15 +2868,18 @@ button {
 
 @media (min-width: 951px) {
   .main_cases_box {
-    display: none; } }
+		display: none; 
+	margin: 10px} }
 
 @media (max-width: 950px) {
   .main_cases_box {
-    padding-bottom: 68px; } }
+		padding-bottom: 68px;
+	margin: 10px; } }
 
 @media (max-width: 500px) {
   .main_cases_box {
-    padding-bottom: 20px; } }
+		padding-bottom: 20px;
+	margin: 10px } }
 
 .main_case_item {
   position: relative;
@@ -2910,7 +2935,7 @@ button {
 .main_case_learn_more {
   position: relative;
   top: 25px;
-  font-size: 13px;
+  font-size: 20px;
   font-style: italic;
   color: #252537; }
   .main_case_learn_more:before {
@@ -3042,7 +3067,7 @@ button {
 
 .overlay__info_text {
   font-size: 2.49vw;
-  color: #f9e1d5;
+  color: black;
   font-weight: 700;
   text-decoration: none; }
   @media (max-width: 950px) {
@@ -4265,11 +4290,11 @@ button {
     -o-transition-delay: 1150ms;
     transition-delay: 1150ms; }
   .highlight-green {
-    background-image: linear-gradient(-120deg, transparent 55%, #47ff87); }
+    background-image: linear-gradient(-120deg, transparent 55%, green); }
   .highlight-pink {
     background-image: linear-gradient(-60deg, transparent 55%, #ee9eff); }
   .highlight-last {
-    background-image: linear-gradient(120deg, transparent 45%, #47ff87); }
+    background-image: linear-gradient(120deg, transparent 45%, #ff4); }
   .delay--max-cta {
     margin-top: 20px; }
   a.button {
@@ -4278,12 +4303,151 @@ button {
     font-weight: 700;
     padding: .6em;
     border: 1px solid #333333;
-    border-radius: 5px; }
-  .main_screen_content {
-    background: url(../img/bg/icons8-user-male.svg) no-repeat 80% 50% / contain; }
-      @media (max-width: 950px) { .main_screen_content {
-           background: rgb(255,255,255); } }
+		border-radius: 5px; }
+		
+.main_screen_content {
+background: url(../img/bg/icons8-user-male.svg) no-repeat 80% 50% / contain; }
+	@media (max-width: 950px) { .main_screen_content {
+				background: rgb(255,255,255); }
+				}
+				
+	.main_screen_content1 {
+		background: url(../img/bg/about-page.svg)  no-repeat 80% 50% / contain !important; 
+	}
+			@media (max-width: 950px) { 
+				.main_screen_content1 {
+					display: none !important; 
+				} 
+
+				.no_mobile{
+					height:0%  !important;
+					width: 0% !important;
+					padding: 0px !important;
+					margin: 0px !important;
+					display: none !important;
+					border: 0;
+				}
+		}
+
+		.main_screen_about{
+			background-color:inherit;
+			text-align: left;
+			height: auto;
+			width: 50%;
+		}
+.i_know{
+	width: 70%;
+	margin-left: 10%;
+}
+
+		.highlight-blue {
+			background-image: linear-gradient(160deg, transparent 65%, #d5edf9);
+	 	  width: 60%;
+		}
+
+
+		
+
+		#projects{
+		text-align: center;
+		background: inherit;
+		height: inherit;
+		padding: inherit;
+		padding-bottom: 0px;
+	}
+	
+	.project-tile{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-gap: 20px;
+	}
+	
+	.project-tile div{
+		background-color:transparent;
+		height: 300px;
+		border: 5px solid blue;
+	}
+	
+	.project-tile img{
+		height: 80%;
+		width: 100%;
+	}
+
+.img--about{
+display: flex;
+max-width: 100%;
+max-height: 100%
+}			
 
 
 
+.container{
+width: 50%;
+margin: 0 auto;
+}
+@keyframes load{
+from {
+width: 0%
+}
+}
+@-webkit-keyframes load{
+from {
+width: 0%
+}
+}
+@-moz-keyframes load{
+from {
+width: 0%
+}
+}
+@-o-keyframes load{
+from {
+width: 0%
+}
+}
+
+.bar{
+background-color: #EEE;
+padding: 2px;
+border-radius: 15px;
+margin-bottom: 5px;
+font-size: 14px;
+color: black;
+font-weight: bold;
+text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.bar::before{
+content:  attr(data-skill);
+background-color: #f3b0ff;
+display: inline-block;
+padding: 5px 0 5px 10px;
+border-radius: inherit;
+animation: load 2s 0s;
+-webkit-animation: load 2s 0s;
+-moz-animation: load 2s 0s;
+-o-animation: load 2s 0s;
+}
+
+.bar.front::before{
+background-color: #ffcc33;
+}
+.bar.back::before{
+background-color: #a6cfe3;
+}
+
+.bar.learning::before{
+width: calc(20% - 10px);
+}
+.bar.basic::before{
+width: calc(40% - 10px);
+}
+.bar.intermediate::before{
+width: calc(60% - 10px);
+}
+.bar.advanced::before{
+width: calc(80% - 10px);
+}
+.bar.expert::before{
+width: calc(100% - 10px);
+}
 
